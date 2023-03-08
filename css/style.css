@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --brand: rgb(191, 143, 0);
+   --dark: #212529;
+   --white: #ffffff;
+}
+
+body {
+   font-family: "Sora", sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   color: var(--dark);
+   letter-spacing: 1px;
+   font-weight: 500;
+   overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+a {
+   text-decoration: none;
+   color: var(--dark);
+   transition: all 0.4s ease;
+}
+
+a:hover {
+   color: var(--brand);
+}
+
+img {
+   width: 100%;
+}
+
+.bg-brand {
+   background-color: var(--brand);
+}
+
+/* HERO */
+.hero {
+   background-image: url('../img/Banner.jpeg');
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   position: relative;
+   z-index: 2;
+   width: 100%;
+}
+
+.hero::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(14, 12, 12, 0.6);
+   z-index: -1;
+}
+
+.hero h1 {
+   letter-spacing: 0px;
+   font-weight: 600;
+}
+
+.hero h6 {
+   letter-spacing: 2px;
+   font-size: 14px;
+}
+
+/* BTN */
+.btn {
+   padding: 12px 32px;
+   border-radius: 100px;
+   font-size: 20px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+.btn-brand {
+   background-color: var(--brand);
+   color: #fff;
+}
+
+.btn-brand:hover {
+   color: var(--brand);
+   background: transparent;
+   border-color: var(--brand);
+}
+
+.btn-outline-brand {
+   color: var(--brand);
+   background: transparent;
+   border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+   background-color: var(--brand);
+   color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+   transition: background 0.3s linear, padding 0.2s linear, top 0.3s;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+   .navbar {
+     background-color: var(--dark);
+   }
+ }
+
+.navbar-dark .navbar-nav .nav-link {
+   text-transform: uppercase;
+   font-size: 14px;
+   transition: all 0.8s ease;
+   font-weight: 600;
+   border-bottom: 2px solid transparent;
+   color: #fff !important;
+}
+
+#navbarNav ul li a{
+   font-size: 19px;
+   margin-right: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+   color: var(--brand) !important;
+}
+
+/* INFOBOX */
+.feature-box {
+   background-color: #fff;
+   padding: 60px 30px;
+}
+
+.icon-box {
+   width: 80px;
+   height: 80px;
+   font-size: 32px;
+   background-color: var(--brand);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100px;
+   color: #fff;
+   margin: 0 auto 30px auto;
+   flex: none;
+}
+
+.bold {
+   color: rgb(191, 143, 0);
+}
+
+section {
+   padding-top: 50px;
+   padding-bottom: 10px;
+}
+
+/* INTRO */
+
+.intro .divider {
+   width: 94px;
+   height: 2px;
+   background-color: var(--brand);
+   margin: 18px auto;
+}
+
+.intro {
+   margin-bottom: 50px;
+}
+
+.intro p {
+   max-width: 740px;
+   margin: auto;
+}
+
+/* Milestone */
+.milestone {
+   background-image: url('../img/cover.jpg');
+   background-size: cover;
+   background-position: center;
+   position: relative;
+   z-index: 2;
+   display: flex;
+}
+
+.milestone::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(29, 34, 46, 0.5);
+   z-index: -1;
+}
+
+.row .divider-main{
+   width: 200px;
+   height: 2px;
+   background-color: var(--brand);
+   margin: 18px auto;
+}
+
+.milestone .col{
+   margin-bottom: 50px;
+}
+
+.counter .h1 {
+   color: var(--brand);
+}
+
+.counter .number {
+   font-size: 44px;
+   font-weight: 300;
+   line-height: 1;
+}
+
+.col .divider {
+   width: 100px;
+   height: 2px;
+   background-color: var(--brand);
+   margin: 18px auto;
+}
+.col p{
+   font-size: 20px;
+}
+
+/* About */
+
+.o_nama{
+   width: 100%;
+   min-height: 80vh;
+}
+
+.cont{
+   width: 80%;
+   display: block;
+   margin: auto;
+}
+
+.content-section{
+   float: left;
+   width: 55%;
+}
+
+.image-section{
+   float: right;
+   width: 42%;
+}
+
+.image-section img{
+   width: 100%;
+   height: auto;
+   opacity: 0.8;
+}
+
+.content-section .title{
+   text-transform: uppercase;
+   font-size: 28px;
+}
+
+.content-section .content h3{
+   margin-top: 20px;
+   color: #5d5d5d;
+   font-size: 21px;
+}
+
+.content-section .content p{
+   margin-top: 10px;
+   font-family: sans-serif;
+   font-size: 18px;
+   line-height: 1.5;
+}
+
+@media only screen and (max-width: 990px) {
+   .cont{
+      width: 80%;
+      display: block;
+      margin: auto;
+   }
+   .content-section{
+      float: none;
+      width: 100%;
+      display: block;
+      margin: auto;
+   }
+   .image-section{
+      float: none;
+      width: 100%;
+   }
+   .image-section img{
+      padding-top: 20px;
+      height: auto;
+      display: block;
+      margin: auto;
+   }
+   .content-section .title{
+      text-align: center;
+      font-size: 19px;
+   }
+   .content-section .content h3{
+      margin-top: 20px;
+      color: #5d5d5d;
+      font-size: 21px;
+      text-align: center;
+   }
+   .content-section .content p{
+      margin-top: 10px;
+      font-family: sans-serif;
+      font-size: 19px;
+      line-height: 1.6;
+      text-align: center;
+   }
+   .button{
+      text-align: center;
+   }
+}
+
+/* KONTAKT */
+
+.contact{
+   position: relative;
+   min-height: 60vh;
+   padding: 50px 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.contact .content{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.contactInfo{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+.contactInfo .box{
+   position: relative;
+   padding: 20px 0;
+   display: flex;
+}
+
+.contactInfo .box .icon{
+   width: 70px;
+   height: 70px;
+   font-size: 32px;
+   background-color: var(--brand);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 100px;
+   color: #fff;
+   flex: none;
+}
+
+.contactInfo .box .text{
+   display: flex;
+   margin-left: 20px;
+   font-size: 20px;
+   flex-direction: column;
+   font-weight: 300;
+}
+
+.contactInfo .box .text h3{
+   font-weight: 600;
+   font-size: 24px;
+}
+
+.contactForm{
+   width: 50%;
+   padding: 40px;
+}
+
+.contactForm .inputBox{
+   position: relative;
+   width: 100%;
+   margin-top: 10px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+   width: 100%;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   border: none;
+   border-bottom: 2px solid #333;
+   outline: none;
+   resize: none;
+}
+
+.contactForm .inputBox span{
+   position: absolute;
+   left: 0;
+   padding: 5px 0;
+   font-size: 16px;
+   margin: 10px 0;
+   pointer-events: none;
+   transition: 0.5s;
+   color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+   color: #e91e63;
+   font-size: 12px;
+   transform: translateY(-20px);
+}
+
+.contactForm .inputBox button{
+   width: 100px;
+   background: var(--brand);
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   padding: 10px;
+   font-size: 18px;
+}
+
+@media(max-width: 991px)
+{
+   .contact{
+      padding: 125px 30px;
+   }
+   .content{
+      flex-direction: column;
+   }
+   .content .contactInfo{
+      margin-bottom: 40px;
+   }
+   .content .contactInfo, .contactForm{
+      width: 100%;
+   }
+   .contactForm h3{
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 40px;
+      text-align: center;
+   }
+   .contactForm .inputBox{
+      margin-top: 30px;
+      text-align: center;
+   }
+}
+
+
+/* FOOTER */
+footer {
+   background-color: var(--dark);
+   padding-top: 20px;
+}
+
+footer ul {
+   list-style: none;
+   margin-bottom: 0;
+}
+
+footer ul li {
+   display: inline-block;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+footer ul li a {
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 500;
+   font-size: 24px;
+}
+
+
+.slikice{
+   width: 15vh;
+   height: 15vh;
+}
+
+.col-img {
+   background-image: url(slike/o-nama.jpg);
+   background-position: center;
+   background-size: cover;
+   min-height: 500px;
+}
+
+.project {
+   position: relative;
+   overflow: hidden;
+}
+
+.project .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(21, 20, 51, 0.8);
+   padding: 30px;
+   display: flex;
+   align-items: flex-end;
+   transition: all 0.4s ease;
+   opacity: 0;
+}
+.carousel-item
+{
+   max-width: 100%;
+   vertical-align: middle;
+   height: 100%;
+   width: 100%;
+}
+
+.project img {
+   transition: all 0.4s ease;   
+   width: 100%;
+   height: 100%;
+}
+
+.project:hover .overlay{
+   opacity: 1;
+}
+
+.project:hover img {
+   transform: scale(1.1);
+}

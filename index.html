@@ -1,67 +1,68 @@
-<html>
-    <head>
-        <title>PROYEKT CONSULTING</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript">
+<!doctype html>
+<html lang="hr">
 
-            window.onload = function() {
-            
-              document.getElementById('foo').addEventListener('click', function (e) {
-                var img = document.createElement('img');
-                img.setAttribute('src', 'http://blog.stackoverflow.com/wp-content/uploads/stackoverflow-logo-300.png');
-                e.target.appendChild(img);
-              });
-            
-            };
-            
-            </script>
-    </head>
-    <body>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-white"  id="pocetak">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/et-line-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>PROYEKT CONSULTING</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="slike/Logo.png" alt="">
-            </a>
-            
+            <a class="navbar-brand logo-text" href="index.html" style="font-size: 18px;">PROYEKT CONSULTING</a>
+            <button class="navbar-toggler" id="baton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-    </nav><!-- //NAVBAR -->
+    </nav>
 
-
-        <!------HERO------>
-
-        <div class = "hero vh-100 d-flex align-items-center">
-            <div class = "container">
-                <div class = "row">
-                    <div class = "col-lg-7 mx-auto text-center">
-                         <h1 class = "display-4 text-white" style="font-size: 60px;"><b class="bold">PROYEKT CONSULTING</b></h1>
-                         <p class = "text-white my-4">Vaš partner u pripremi i provedbi projekata.</p> 
-                         <a href="#kontakt" class = "btn btn-warning me-2 btn-lg">Kontaktirajte nas</a>  
-                    </div>
+    <!-- HERO -->
+    <section id="home" class="hero" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mx-auto" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                  
+                    <h1 class="text-white display-3 my-4"><b class="bold">PROYEKT CONSULTING</b></h1>
+                    <h6 class="text-white display-3 my-4">Vaš partner u pripremi i provedbi projekata.</h6>
+                    <a href="#kontakt" class="btn btn-brand">KONTAKT</a>
                 </div>
             </div>
         </div>
+    </section>
+    
 
-    <section id="opis">
+    <section id="1" class="bg-light text-center">
         <div class="container">
-            <h1> <b class="bold">PROYEKT CONSULTING</b> pruža usluge savjetovanja u području
-                pripreme i provedbe nacionalnih i EU projekata.</h1>
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <h1>PROYEKT CONSULTING pruža usluge savjetovanja u području
+                        pripreme i provedbe nacionalnih i EU projekata.</h1>
+                    <div class="divider"></div>
+                </div>
+            </div>
         </div>
     </section>
-    <hr>
-    <section>
+
+    <section id="2" class="bg-light text-center">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 mx-auto text-center">
-                    <img class="slikice" src="slike/Slika1.png" alt=""><br><br>
-                    <h1>Poslovna ideja</h1><br>
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <img class="slikice" src="img/Slika1.png" alt=""><br><br>
+                    <h1>Poslovna ideja</h1>
                     <p>
                         Imate definiranu poslovnu ideju za vaše poduzeće i zanimaju vas
                         bespovratna sredstva ali ne znate od kuda bi krenuli?
@@ -70,18 +71,19 @@
                             OBRATITE NAM SE SA POVJERENJEM.
                         </b>
                     </p>
+                    
+                    <div class="divider"></div>
                 </div>
             </div>
-            
         </div>
     </section>
-    <hr>
-    <section>
+
+    <section id="2" class="bg-light text-center">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 mx-auto text-center">
-                    <img class="slikice" src="slike/Slika3.png" alt=""><br><br>
-                    <h1>Izvor financiranja i odabir natječaja</h1><br>
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <img class="slikice" src="img/Slika3.png" alt=""><br><br>
+                    <h1>Izvor financiranja i odabir natječaja</h1>
                     <p>
                         Pogrešan odabir izvora financiranja ili apliciranje na neodgovarajući natječaj
                         može usporiti projekt ili čak dovesti do nemogućnosti realizacije istoga.
@@ -91,18 +93,19 @@
                             IDEJU TE SUKLADNO ISTOJ ODABRATI ODGOVARAJUĆI NATJEČAJ.
                         </b>
                     </p>
+                    
+                    <div class="divider"></div>
                 </div>
             </div>
-            
         </div>
     </section>
-    <hr>
-    <section>
+
+    <section id="3" class="bg-light text-center">
         <div class="container">
-            <div class="row mb-5">
-                <div  class="col-md-8 mx-auto text-center">
-                    <img class="slikice" src="slike/Slika4.png" alt=""><br><br>
-                    <h1>Izrada i priprema projektnog prijedloga</h1><br>
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <img class="slikice" src="img/Slika4.png" alt=""><br><br>
+                    <h1>Izrada i priprema projektnog prijedloga</h1>
                     <p>
                         Svaki natječaj ima svoje posebnosti, a kvaliteta projektnog prijedloga ovisi o
                         usklađenosti istoga sa svrhom natječaja te njegovim općim i specifičnim
@@ -115,18 +118,19 @@
                             APLICIRANJA NA NATJEČAJ
                         </b>
                     </p>
+                    
+                    <div class="divider"></div>
                 </div>
             </div>
-            
         </div>
     </section>
-    <hr>
-    <section>
+
+    <section id="4" class="bg-light text-center">
         <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 mx-auto text-center">
-                    <img class="slikice" src="slike/Slika5.png" alt=""><br><br>
-                    <h1>Provedba projekta</h1><br>
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                    <img class="slikice" src="img/Slika5.png" alt=""><br><br>
+                    <h1>Provedba projekta</h1>
                     <p>
                         Vaš projekt je odabran za financiranje putem bespovratnih sredstva ali kako
                         istoga uspješno provesti? Greške u provedbi projekta dovode do financijskih
@@ -141,14 +145,14 @@
                             INTENZIVNU KOMUNIKACIJU S POSREDNIČKIM TIJELIMA.
                         </b>
                     </p>
+                    
+                    <div class="divider"></div>
                 </div>
             </div>
-            
         </div>
     </section>
 
-    <hr>
-    <!-- PROJECTS -->
+
     <section id="projekti">
         <div class="container-fluid">
             <div class="row mb-5">
@@ -159,7 +163,7 @@
             <div class="row g-3">
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -170,7 +174,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -181,7 +185,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -192,7 +196,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -203,7 +207,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -214,7 +218,7 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="project">
-                        <img src="slike/black.jpg" alt="">
+                        <img src="img/black.jpg" alt="">
                         <div class="overlay">
                             <div>
                                 <h4 class="text-white">Natječaj IME</h4>
@@ -225,69 +229,91 @@
                 </div>
             </div>
         </div>
-    </section><!-- PROJECTS -->
+    </section>
+
+   
 
 
-    
-
-
-    <section id="kontakt">
+    <!-- Kontaktirajte nas -->
+    <section class="contact" id="kontakt">
         <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-8 mx-auto text-center">
-                <h1 >STOJIMO NA RASPOLAGANJU <b class="bold">I ZA VAŠ NOVI PROJEKT</b></h1><br>
-                <h5>Najbrži način da dobijete nekog iz Proyekt tima je putem kontakt obrasca ispod. Podatke prikupljene putem obrasca koristimo
+            <div class="row">
+                <div class="col-12 intro text-center" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    <h1 >STOJIMO NA RASPOLAGANJU <b class="bold">I ZA VAŠ NOVI PROJEKT</b></h1><br>
+                <p>Najbrži način da dobijete nekog iz Proyekt tima je putem kontakt obrasca ispod. Podatke prikupljene putem obrasca koristimo
                     isključivo u svrhu povratne informacije.
-                </h5>
-
-                <br>
-                <div class="contactForm" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
-                  <form action="" method="POST">
-                      <h3>Pošaljite nam poruku</h3>
-                      <div class="inputBox">
-                          <input type="text" name="ime" required>
-                          <span>Ime i prezime</span>
-                      </div>
-                      <div class="inputBox">
-                          <input type="text" name="email" required>
-                          <span>E-mail</span>
-                      </div>
-                      <div class="inputBox">
-                          <textarea name="poruka" required></textarea>
-                          <span>Napišite poruku...</span>
-                      </div>
-                      <input type="hidden" name="_next" value="" >
-                      <input type="hidden" name="_captcha" value="false">
-                      <div class="inputBox">
-                          <button type="submit">Pošalji</button>
-                      </div>
-                  </form>
-              </div>
+                </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contactInfo" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+                    
+                    <div class="box">
+                        <div class="icon"><i class="icon-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p onclick="copy(this)">proyektconsulting@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="contactForm" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
+                    <form action="https://formsubmit.co/proyektconsulting@gmail.com" method="POST">
+                        <h3>Pošaljite nam poruku</h3>
+                        <input type="hidden" name="_next" value="https://nskeva.github.io/">
+                        <input type="hidden" name="_captcha" value="false">
+                        <div class="inputBox">
+                            <input type="text" name="ime" required>
+                            <span>Ime i prezime</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="broj" required="">
+                            <span>Broj telefona</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="poruka" required></textarea>
+                            <span>Napišite poruku...</span>
+                        </div>
+                        <div class="inputBox">
+                            <button type="submit">Pošalji</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        
-        
-        
-        </div>
-  </section>
+    </section>
 
-          <br><br>
 
-          <!-- FOOTER -->
-          <footer>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="row">
-                        <div>
-                            <p style="text-align: center; font-size: 18px; color: white;">Proyekt Consulting © 2023</p>
-                        </div>
+    <footer class="text-white text-center">
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div>
+                        <p style="text-align: center; font-size: 18px; color: white;">PROYEKT CONSULTING © 2023</p>
                     </div>
                 </div>
             </div>
-        </footer><!-- FOOTER -->
+        </div>
+    </footer>
 
-    
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <!-- Jarallax -->
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-    </body>
+</body>
+
 </html>
