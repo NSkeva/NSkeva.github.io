@@ -63,7 +63,7 @@ a {
 
 .hero 
 {
-    background-image: url(slike/cover.png);
+    background-image: url(img/hero.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
