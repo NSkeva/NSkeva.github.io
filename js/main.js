@@ -45,7 +45,7 @@ $('.blog-carousel').owlCarousel({
 });
 
 
-//na scroll makne navbar
+/*na scroll makne navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -60,7 +60,7 @@ window.onscroll = function() {
 //mobile kad se klikne link makne se navbar
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
-});
+});*/
 
 //onclick kopira text
 function copy(that){
