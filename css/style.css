@@ -561,3 +561,8 @@ footer ul li a {
 .project:hover img {
    transform: scale(1.1);
 }
+
+#projekti a {
+   display: inline-block;
+   margin: 5px 0;
+}
